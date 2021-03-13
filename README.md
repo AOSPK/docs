@@ -18,6 +18,7 @@ Before you open a pull request to add your device into our list of official devi
 3. - The maintainers must keep the authorship of Git commits on everything that they'll make a change, even it's your device tree, kernel or ROM sources. Lots of git commit --amend and force-pushes are acceptable.
 4. - Relationships fights can be done in PM on Telegram or XDA.
 5. - The maintainers also need to add **export CUSTOM_BUILD_TYPE=OFFICIAL** in their build environment so OTA app will be included.
+6. - You cannot add prebuilts from external apps or piracy
 
 ### Upload new buildings:
 1. - Make sure the build has been tested and is working. Never do this without the building having been tested!

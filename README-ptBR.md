@@ -18,6 +18,7 @@ Antes de abrir uma solicitação para adicionar seu dispositivo à nossa lista d
 3. - Os mantenedores devem manter a autoria do Git commits em tudo que eles fizerem uma mudança, mesmo que seja sua árvore de dispositivos, kernel ou fontes de ROM. git commit --amend e force-pushes são aceitáveis.
 4. - As divulgações podem ser feitas no PM, Telegram ou XDA.
 5. - Os mantenedores também precisam adicionar **export CUSTOM_BUILD_TYPE=OFFICIAL** em seu ambiente de construção para que o aplicativo OTA seja incluído.
+6. - Não pode adicionar prebuilts de apps externos ou de pirataria
 
 ### Upload de novas construções:
 1. - Certifique-se de que a construção foi testada e está funcionando. Nunca envie uma nova build sem testar!
