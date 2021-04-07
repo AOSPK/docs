@@ -21,17 +21,12 @@ Before you open a pull request to add your device into our list of official devi
 
 ### Upload new buildings:
 1. - Make sure the build has been tested and is working. Never do this without the building having been tested!
-2. - Upload to our host on **SourceForge**. You can do this both from the terminal or the browser.
-   - Terminal:
-   - `scp Kraken-11-20200112-1303-beryllium.zip username@frs.sourceforge.net:/home/frs/p/aospk/youdevice`
-3. - To make it available in our download center it is necessary to register the construction in the [AOSPK/official_devices](https://github.com/AOSPK/official_devices).
+2. - Official builds must be built from our own server.
+3. - In our CI, the builds will be hosted as soon as the maintainer tests. CI automation will also post the build information on official_devices alone.
 4. - Only after these steps will you be free to publish in channels, groups and XDA.
 
 ### Changelog
-For each new version, you need to upload the changelog to this repository in the device specific folder.
-
-The changelog file name must match the **.zip** file name and should end with **.txt**
-Eg: **.zip**, **Kraken-11-20200112-1303-beryllium.zip**, changelog file name should be **Kraken-11-20200112-1303-beryllium.txt**
+Our system is automatic, you should not worry about updating any scripts, just register the new build through our CI, and the Updater will automatically recognize it.
 
 ### Over-the-air (OTA) updates
 Our system is automatic, you should not worry about updating some script, just upload the new build to the FTP server and send a pull request with the changelog and also edit your device JSON file **builds/device_codename.json**.
@@ -39,6 +34,8 @@ Our system is automatic, you should not worry about updating some script, just u
 Eg: Poco F1 is called **beryllium**, so the device JSON file is **builds/beryllium.json**
 
 **Note:** New builds can take up to 10 minutes to appear on the site and in the OTA application.
+
+**WARNING:** Manual registration is no longer required.
 
 ### JSON params
 ##### devices.json

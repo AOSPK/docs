@@ -21,24 +21,20 @@ Antes de abrir uma solicitação para adicionar seu dispositivo à nossa lista d
 
 ### Upload de novas construções:
 1. - Certifique-se de que a construção foi testada e está funcionando. Nunca envie uma nova build sem testar!
-2. - Faça o upload para nosso host no **SourceForge**. Você pode fazer isso no terminal ou no navegador.
-    - Terminal:
-    - `scp Kraken-11-20200112-1303-beryllium.zip nomedeusuario@frs.sourceforge.net:/home/frs/p/aospk/seudispositivo`
-3. - Para disponibilizá-lo em nosso centro de download é necessário registrar a construção no [AOSPK/official_devices](https://github.com/AOSPK/official_devices).
+2. - As compilações oficiais deverão ser construídas a partir do nosso próprio servidor.
+3. - Em nossa CI, as builds serão hospedadas assim que o maintainer testar. A automação da CI também postará sozinho as informações da build no official_devices.
 4. - Somente após essas etapas você estará livre para publicar em canais, grupos e XDA.
 
 ### Changelog
 Para cada nova versão, você precisa fazer upload do changelog para este repositório na pasta específica do dispositivo.
-
-O nome do arquivo do changelog deve corresponder ao nome do arquivo **.zip** e deve terminar com **.txt**
-Ex: **.zip**, **Kraken-11-20200112-1303-beryllium.zip**, o nome do arquivo do changelog deve ser **Kraken-11-20200112-1303-beryllium.txt**
+Nossa CI criará automaticamente o arquivo, você apenas precisará de escrever o conteúdo.
 
 ### Over-the-air (OTA) atualizações
-Nosso sistema é automático, você não deve se preocupar em atualizar algum script, basta fazer o upload do novo build para o servidor **SourceForge** e enviar uma solicitação com o changelog, e também editar o arquivo JSON do seu dispositivo **builds/device_codename.json**).
-
-Ex: Poco F1 é chamado de **beryllium**, então o arquivo JSON do dispositivo é **builds/beryllium.json**
+Nosso sistema é automático, você não deve se preocupar em atualizar algum script, basta cadastrar a nova build através da nossa CI, e o Updater reconhecerá automaticamente.
 
 **Observação:** Novas compilações podem levar até 10 minutos para aparecer no site e no aplicativo OTA.
+
+**ATENÇÃO:** Não é necessário mais o cadastro manual.
 
 ### JSON parâmetros
 ##### devices.json
