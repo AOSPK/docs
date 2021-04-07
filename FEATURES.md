@@ -20,6 +20,9 @@ Features (Settings)
         - Display music visualizer
       * Edge notifications
 
+* Security
+    * FaceUnlock
+
 * System
     * Buttons
       * Navigation bar
